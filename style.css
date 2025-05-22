@@ -169,7 +169,7 @@ body {
   background: #ffffff;
   border-radius: 20px;
   padding: 30px 20px;
-  transition: 0.4s ease;
+  transition: 5s ease;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
