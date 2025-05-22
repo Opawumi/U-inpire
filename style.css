@@ -40,68 +40,85 @@ body {
   color: #07157e;
   text-decoration: none;
 }
-
 .hero-section {
   background: url('https://images.pexels.com/photos/3182763/pexels-photo-3182763.jpeg') no-repeat center center/cover;
-  height: 500px;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
 }
 
-.Unlock{
-  font-size: 2.9rem;
-  font-weight:900;
+.hero-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.Unlock {
+  font-size: 3rem;
+  font-weight: 900;
   color: #030d58;
-  margin-left: 20px;
-  margin-top: 12%;
   background-color: hsla(0, 0%, 100%, 0.4);
-  border-radius: 40px;
-  width: 1200px;
+  border-radius: 30px;
+  padding: 15px 30px;
+  margin-bottom: 20px;
 }
 
-.expert{
-    font-size: 1.8rem;
-    font-weight: 700;
-    background-color: hsla(0, 0%, 0%, 0.5);
-    width: 900px;
-    margin-left: 15%;
-    border-radius: 40px;
-
-}
-.btn1{
-    background-color: #07157e;
-    color: #ffffff;
+.expert {
+  font-size: 1.6rem;
+  font-weight: 700;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 30px;
+  padding: 10px 10px;
+  margin-bottom: 25px;
+  color: #fff;
 }
 
-@media (max-width: 768px) {
-  .hero-section {
-    height: 450px;
-    padding: 20px;
-  }
+.btn1 {
+  background-color: #07157e;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 12px 30px;
+  border-radius: 30px;
+}
 
+/* RESPONSIVE ADJUSTMENTS */
+
+@media (max-width: 992px) {
   .Unlock {
-    font-size: 2rem;
-    padding: 8px 16px;
-    width: 350px;
-    margin-left: 10px;
+    font-size: 2.5rem;
   }
 
   .expert {
-    font-size: 1.1rem;
-    padding: 5px;
-    max-width: 90%;
-    margin-left: 30px;
+    font-size: 1.3rem;
   }
 
   .btn1 {
     font-size: 0.95rem;
-    padding: 10px 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto;
+    padding: 40px 15px;
+  }
+
+  .Unlock {
+    font-size: 2rem;
+  }
+
+  .expert {
+    font-size: 1.2rem;
+  }
+
+  .btn1 {
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 480px) {
-  .hero-section {
-    height: 400px;
-  }
-
   .Unlock {
     font-size: 1.7rem;
   }
@@ -111,10 +128,9 @@ body {
   }
 
   .btn1 {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 }
-
 
 
 /* Introduction Section */
@@ -275,10 +291,11 @@ body {
 
 /* Registration Container */
 .registration-container {
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: center;
-    padding-left: 30%;
+    padding: 50px 15px;
+    box-sizing: border-box;
 }
 
 /* Registration Card (the white box) */
@@ -288,7 +305,9 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding: 40px 30px;
     text-align: center;
-    width: 100%;
+    width: 60%;
+    max-width: 500px;
+    box-sizing: border-box;
 }
 
 .registration-card h2 {
@@ -308,7 +327,7 @@ body {
 .registration-form {
     display: flex;
     flex-direction: column;
-    gap: 20px; 
+    gap: 20px;
 }
 
 .form-group {
@@ -320,14 +339,14 @@ body {
 .form-group .icon {
     position: absolute;
     left: 15px;
-    color: #666; 
+    color: #666;
     font-size: 1.1em;
 }
 
 .form-group input,
 .form-group select {
     width: 100%;
-    padding: 12px 12px 12px 45px; 
+    padding: 12px 12px 12px 45px;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 1em;
@@ -342,25 +361,24 @@ body {
 
 .form-group input:focus,
 .form-group select:focus {
-    border-color: #007bff; 
+    border-color: #007bff;
     box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
 }
 
 .form-group select {
-    -webkit-appearance: none; 
+    -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23000%22%20d%3D%22M287%2C197.8%20c5.3%2C5.3%2C12.3%2C8.2%2C19.4%2C8.2%20s14.1-2.9%2C19.4-8.2l-287-287c-5.3-5.3-8.2-12.3-8.2-19.4s2.9-14.1%2C8.2-19.4l19.4-19.4c5.3-5.3%2C12.3-8.2%2C19.4-8.2s14.1%2C2.9%2C19.4%2C8.2l287%2C287c5.3%2C5.3%2C8.2%2C12.3%2C8.2%2C19.4s-2.9%2C14.1-8.2%2C19.4L287%2C197.8z%22%2F%3E%3C%2Fsvg%3E'); /* Custom arrow for select */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23000%22%20d%3D%22M287%2C197.8%20c5.3%2C5.3%2C12.3%2C8.2%2C19.4%2C8.2%20s14.1-2.9%2C19.4-8.2l-287-287c-5.3-5.3-8.2-12.3-8.2-19.4s2.9-14.1%2C8.2-19.4l19.4-19.4c5.3-5.3%2C12.3-8.2%2C19.4-8.2s14.1%2C2.9%2C19.4%2C8.2l287%2C287c5.3%2C5.3%2C8.2%2C12.3%2C8.2%2C19.4s-2.9%2C14.1-8.2%2C19.4L287%2C197.8z%22%2F%3E%3C%2Fsvg%3E');
     background-repeat: no-repeat;
     background-position: right 15px center;
     background-size: 12px;
-    padding-right: 45px; 
+    padding-right: 45px;
 }
-
 
 /* Register Button */
 .btn-register {
-    background-color: #007bff; 
+    background-color: #007bff;
     color: #ffffff;
     padding: 14px 25px;
     border: none;
@@ -373,13 +391,15 @@ body {
 }
 
 .btn-register:hover {
-    background-color: #0056b3; 
+    background-color: #0056b3;
     transform: translateY(-2px);
 }
 
+/* MEDIA QUERIES */
 
 @media (max-width: 768px) {
     .registration-card {
+        width: 80%;
         padding: 30px 20px;
     }
 
@@ -409,32 +429,39 @@ body {
 }
 
 @media (max-width: 480px) {
-    body {
-        padding: 15px;
-    }
     .registration-card {
+        width: 100%;
         border-radius: 5px;
         padding: 25px 15px;
     }
+
     .registration-card h2 {
         font-size: 1.3em;
         margin-bottom: 8px;
     }
+
     .registration-card p {
         font-size: 0.85em;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
+
     .form-group input,
     .form-group select {
         padding: 8px 8px 8px 35px;
         font-size: 0.9em;
     }
+
     .form-group .icon {
         left: 8px;
         font-size: 0.9em;
     }
-    
+
+    .btn-register {
+        padding: 10px 18px;
+        font-size: 0.95em;
+    }
 }
+
 
 
 
